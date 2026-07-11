@@ -28,10 +28,10 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile Sidebar Overlay */}
-      <div className={`${styles.sidebarOverlay} ${isMobileMenuOpen ? styles.open : ''}`} onClick={() => setIsMobileMenuOpen(false)}></div>
+      <div className={`${styles.sidebarOverlay} ${isMobileMenuOpen ? styles.overlayOpen : ''}`} onClick={() => setIsMobileMenuOpen(false)}></div>
       
       {/* Mobile Sidebar */}
-      <aside className={`${styles.sidebar} ${isMobileMenuOpen ? styles.open : ''}`}>
+      <aside className={`${styles.sidebar} ${isMobileMenuOpen ? styles.sidebarOpen : ''}`}>
         <div className={styles.sidebarHeader}>
           <h2>MENU</h2>
           <FaTimes className={styles.closeIcon} onClick={() => setIsMobileMenuOpen(false)} />

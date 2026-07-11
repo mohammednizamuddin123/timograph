@@ -166,7 +166,7 @@ body{
   visibility: hidden;
   transition: 0.3s;
 }
-.sidebarOverlay.open {
+.overlayOpen {
   opacity: 1;
   visibility: visible;
 }
@@ -174,7 +174,7 @@ body{
 .sidebar {
   position: fixed;
   top: 0;
-  left: -280px;
+  left: -100%;
   width: 280px;
   height: 100vh;
   background: #111;
@@ -185,7 +185,7 @@ body{
   flex-direction: column;
   box-shadow: 2px 0 10px rgba(0,0,0,0.5);
 }
-.sidebar.open {
+.sidebarOpen {
   left: 0;
 }
 
