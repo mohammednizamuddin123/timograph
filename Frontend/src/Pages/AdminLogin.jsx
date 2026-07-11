@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../Styles/Login.module.css";
+import styles from "../Styles/login.module.css";
 import axiosInstance from "../api/axios";
 import { useEffect } from "react";
 
