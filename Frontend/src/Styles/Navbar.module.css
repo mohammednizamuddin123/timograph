@@ -244,6 +244,12 @@ body{
 }
 
 /* Responsive */
+@media screen and (min-width: 993px) {
+  .sidebarOverlay,
+  .sidebar {
+    display: none !important;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .hamburger {

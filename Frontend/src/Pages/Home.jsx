@@ -19,6 +19,7 @@ const Home = () => {
         <h3 style={{ margin: '0 0 15px 0', fontSize: '1rem', color: '#d4a24c', textAlign: 'center', letterSpacing: '1px' }}>QUICK EXPLORE</h3>
         <div style={{
           display: 'flex',
+          justifyContent: 'center',
           gap: '10px',
           overflowX: 'auto',
           paddingBottom: '10px',
