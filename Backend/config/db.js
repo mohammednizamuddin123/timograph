@@ -1,6 +1,7 @@
 const mongoose=require("mongoose")
 function connection(){
-    mongoose.connect("mongodb://localhost:27017/website")
+    const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/website";
+    mongoose.connect(mongoURI)
 .then(()=>{
     console.log("Database Connected");
     
