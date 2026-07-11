@@ -1,0 +1,112 @@
+.dashboardContainer {
+  padding: 1rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kpiCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.kpiCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.kpiCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.cardRevenue::before { background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); }
+.cardOrders::before { background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%); }
+.cardProducts::before { background: linear-gradient(90deg, #fa709a 0%, #fee140 100%); }
+.cardUsers::before { background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%); }
+
+.cardTitle {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.cardValue {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.cardSubtitle {
+  font-size: 0.9rem;
+  color: #2ecc71;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardSubtitle.negative {
+  color: #e74c3c;
+}
+
+.recentSection {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.recentSection h2 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f1f2f6;
+  padding-bottom: 0.8rem;
+}
+
+.emptyState {
+  text-align: center;
+  color: #95a5a6;
+  padding: 3rem 0;
+  font-style: italic;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px dashed #ced4da;
+}

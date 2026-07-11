@@ -1,0 +1,129 @@
+.section {
+    padding: 5rem 2rem;
+    background-color: #0a0a0a; /* Sync with Home page background */
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .sectionSubTitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d4af37; /* Gold/Bronze */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    font-family: 'Times New Roman', serif; /* Elegant serif font */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 15px; /* Tighter gap for more columns */
+    max-width: 1400px; /* Wider max-width to accommodate 6 cards */
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1200px) {
+    .grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  .card {
+    background: #161616; /* Slightly lighter than background to distinguish */
+    border: 1px solid #2a2a2a;
+    border-radius: 6px; /* slightly smaller border radius for compact cards */
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border-color: #d4af37; /* Gold border on hover for luxury feel */
+  }
+  
+  .imageContainer {
+    background-color: #000000; /* Deep black to frame the photo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1; /* Make it a perfect square to keep cards compact */
+    overflow: hidden;
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover ensures photos fill the space beautifully */
+    transition: transform 0.6s ease, opacity 0.4s ease;
+    opacity: 0.85; /* Slight fade to blend into the dark theme */
+  }
+
+  .card:hover .productImage {
+      transform: scale(1.08);
+      opacity: 1; /* Brightens up on hover */
+  }
+  
+  .infoContainer {
+    padding: 1rem; /* Reduced padding for smaller cards */
+    background-color: #161616;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #2a2a2a;
+  }
+  
+  .productName {
+    font-size: 0.85rem; /* Smaller, elegant font size */
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: #e0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long names to keep layout clean */
+  }
+  
+  .productPrice {
+    font-size: 0.95rem; /* Smaller price */
+    color: #d4af37; /* Gold price */
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .loading, .error {
+    font-size: 1.2rem;
+    color: #888;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  

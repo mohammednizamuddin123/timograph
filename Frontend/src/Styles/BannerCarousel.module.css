@@ -1,0 +1,104 @@
+.swiperContainer {
+    width: 100%;
+    height: 600px;
+    background-color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .swiperContainer {
+      height: 400px;
+    }
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .slideImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.6);
+  }
+  
+  .contentOverlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 0 10%;
+    max-width: 800px;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Inter', sans-serif; /* Fallback if inter is not global */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.3s;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.5s;
+  }
+  
+  .shopBtn {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #d4af37; /* Gold/Bronze typical of luxury */
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.7s;
+  }
+  
+  .shopBtn:hover {
+    background-color: #f1c453;
+    transform: scale(1.05);
+  }
+  
+  /* Swiper Pagination Styling Customization */
+  :global(.swiper-pagination-bullet) {
+    background-color: white !important;
+    opacity: 0.5;
+  }
+  
+  :global(.swiper-pagination-bullet-active) {
+    background-color: #d4af37 !important;
+    opacity: 1;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

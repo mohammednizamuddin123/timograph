@@ -1,0 +1,136 @@
+.adminContainer {
+  padding: 2rem;
+  background-color: #121212;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.addButton {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.addButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+.tableContainer {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background-color: #222;
+  color: #a0a0a0;
+  padding: 1.2rem 1rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #333;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #2a2a2a;
+  vertical-align: middle;
+  font-size: 1.1rem;
+}
+
+.table tr:hover td {
+  background-color: #252525;
+}
+
+.brandImage {
+  width: 140px;
+  height: 90px;
+  object-fit: contain;
+  background-color: #111;
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.brandName {
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.priorityBadge {
+  background-color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #00d2ff;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.editBtn, .deleteBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.editBtn {
+  color: #4da6ff;
+  background-color: rgba(77, 166, 255, 0.1);
+}
+.editBtn:hover {
+  color: #fff;
+  background-color: #4da6ff;
+}
+
+.deleteBtn {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+}
+.deleteBtn:hover {
+  color: #fff;
+  background-color: #ff4d4d;
+}

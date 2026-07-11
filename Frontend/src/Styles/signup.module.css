@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #050505;
+  background-image: radial-gradient(circle at center, #111827 0%, #050505 100%);
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.formCard {
+  background: linear-gradient(145deg, #0a0a0a 0%, #121212 100%);
+  border: 1px solid #1f2a47;
+  border-radius: 12px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  color: #aeb8d1;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 1.05rem;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #93a1c6;
+  background-color: #222;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 1rem;
+  color: #888;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.eyeIcon:hover {
+  color: #fff;
+}
+
+.errorText {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.submitBtn {
+  width: 100%;
+  background: #c0c0c0;
+  color: #050505;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.submitBtn:disabled {
+  background: #555;
+  color: #888;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.loginLink {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.loginLink a {
+  color: #93a1c6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.loginLink a:hover {
+  color: #fff;
+}

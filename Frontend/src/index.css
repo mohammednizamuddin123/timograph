@@ -1,0 +1,18 @@
+:root{
+    --about-bg:url('https://img.magnific.com/premium-photo/black-background-surrounds-antique-pocket-watch-that-displays-floating-particles-that-represent-time-concept-banner-with-time-countdown-generative-ai_1219132-25727.jpg?semt=ais_hybrid&w=740&q=80')
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
