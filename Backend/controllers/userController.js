@@ -32,7 +32,8 @@ async function postUser(req, res) {
         // Set the auth cookie immediately
         res.cookie("userToken", sessionToken, { 
             httpOnly: true, 
-            sameSite: "lax",
+            sameSite: "none",
+            secure: true,
             maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
         });
 
@@ -74,7 +75,8 @@ async function login(req, res) {
         
         res.cookie(cookieName, sessionToken, { 
             httpOnly: true, 
-            sameSite: "lax",
+            sameSite: "none",
+            secure: true,
             maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
         }).status(200).json({ message: "Login Success", isLogin: true, role: existingUser.role });
         

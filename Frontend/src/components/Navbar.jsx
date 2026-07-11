@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import styles from "../Styles/Navbar.module.css";
@@ -8,11 +8,14 @@ import {
   FaUser,
   FaShoppingBag,
   FaSignOutAlt,
+  FaBars,
+  FaTimes,
 } from "react-icons/fa";
 
 const Navbar = () => {
   const { role, logout } = useContext(AppContext);
   const navigate = useNavigate();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const { items } = useSelector((state) => state.cart);
   const cartItemCount = items ? items.reduce((total, item) => total + item.quantity, 0) : 0;
@@ -24,11 +27,35 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Top Bar */}
+      {/* Mobile Sidebar Overlay */}
+      <div className={`${styles.sidebarOverlay} ${isMobileMenuOpen ? styles.open : ''}`} onClick={() => setIsMobileMenuOpen(false)}></div>
       
+      {/* Mobile Sidebar */}
+      <aside className={`${styles.sidebar} ${isMobileMenuOpen ? styles.open : ''}`}>
+        <div className={styles.sidebarHeader}>
+          <h2>MENU</h2>
+          <FaTimes className={styles.closeIcon} onClick={() => setIsMobileMenuOpen(false)} />
+        </div>
+        <ul className={styles.sidebarLinks}>
+          <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>HOME</Link></li>
+          <li><Link to="/shop" onClick={() => setIsMobileMenuOpen(false)}>SHOP</Link></li>
+          <li><Link to="/collections" onClick={() => setIsMobileMenuOpen(false)}>COLLECTIONS</Link></li>
+          <li><Link to="/brands" onClick={() => setIsMobileMenuOpen(false)}>BRANDS</Link></li>
+          <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>ABOUT US</Link></li>
+          <li><Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>CONTACT</Link></li>
+          {role === 'admin' && (
+            <li><Link to="/admin" onClick={() => setIsMobileMenuOpen(false)} style={{ color: '#d4af37', fontWeight: 'bold' }}>ADMIN DASHBOARD</Link></li>
+          )}
+        </ul>
+      </aside>
 
       {/* Main Navbar */}
       <nav className={styles.navbar}>
+        {/* Hamburger Menu Icon (Mobile Only) */}
+        <div className={styles.hamburger} onClick={() => setIsMobileMenuOpen(true)}>
+          <FaBars />
+        </div>
+
         {/* Logo */}
         <div className={styles.logo}>
           <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
