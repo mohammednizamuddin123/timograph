@@ -13,7 +13,7 @@ const Contact = () => {
         <span className={styles.subtitle}>Get in Touch</span>
         <h1 className={styles.title}>We're Here for You</h1>
         <p className={styles.text}>
-          [PLACEHOLDER] Whether you have a question about our timepieces, need assistance with an order, or require servicing for your watch, our dedicated concierge team is at your disposal.
+          [TIMOGRAPH] Whether you have a question about our timepieces, need assistance with an order, or require servicing for your watch, our dedicated concierge team is at your disposal.
         </p>
       </header>
 
@@ -56,9 +56,9 @@ const Contact = () => {
             <div>
               <h3 className={styles.infoTitle}>Our Boutique</h3>
               <p className={styles.infoText}>
-                [PLACEHOLDER] 123 Heritage Avenue<br />
-                Luxury District, Horology City<br />
-                HC 45678, Country
+                [TIMOGRAPH] Al Asmakh Mall,AlSadd<br />
+                Gulf Mall,Garafa<br />
+                Qatar
               </p>
             </div>
           </div>
@@ -70,8 +70,8 @@ const Contact = () => {
             <div>
               <h3 className={styles.infoTitle}>Phone</h3>
               <p className={styles.infoText}>
-                [PLACEHOLDER] +1 (555) 123-4567<br />
-                Mon-Fri: 9am - 7pm EST
+                [TIMOGRAPH] +974 3150 1001<br />
+              
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Contact = () => {
             <div>
               <h3 className={styles.infoTitle}>Email</h3>
               <p className={styles.infoText}>
-                [PLACEHOLDER] concierge@yourwatchstore.com<br />
+                [TIMOGRAPH] timographqatar@gmail.com<br />
                 support@yourwatchstore.com
               </p>
             </div>

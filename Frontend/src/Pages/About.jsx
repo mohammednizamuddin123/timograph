@@ -17,7 +17,7 @@ const watchMaker="https://media.istockphoto.com/id/937088398/photo/watchmaker-is
         <span className={styles.subtitle}>Our Story</span>
         <h1 className={styles.title}>Crafting Timepieces of Excellence Since 2026</h1>
         <p className={styles.heroText}>
-          [PLACEHOLDER] We believe that a watch is more than just an instrument to tell time. It is a statement of style, a testament to craftsmanship, and an heirloom passed down through generations. Our journey began with a simple passion for horology and has grown into a premier destination for luxury and everyday timepieces.
+          [TIMOGRAPH] We believe that a watch is more than just an instrument to tell time. It is a statement of style, a testament to craftsmanship, and an heirloom passed down through generations. Our journey began with a simple passion for horology and has grown into a premier destination for luxury and everyday timepieces.
         </p>
       </section>
 
@@ -34,7 +34,7 @@ const watchMaker="https://media.istockphoto.com/id/937088398/photo/watchmaker-is
         <div>
           <h2 className={styles.sectionTitle}>The Art of Precision</h2>
           <p className={styles.sectionText}>
-            [PLACEHOLDER] Every collection we curate is selected with the utmost care. We partner with the world's most renowned brands and boutique watchmakers to bring you timepieces that perfectly balance aesthetics with mechanical perfection. Whether you seek a rugged sports watch for your next adventure or an elegant dress watch for formal occasions, we have the perfect piece for your wrist.
+            [TIMOGRAPH] Every collection we curate is selected with the utmost care. We partner with the world's most renowned brands and boutique watchmakers to bring you timepieces that perfectly balance aesthetics with mechanical perfection. Whether you seek a rugged sports watch for your next adventure or an elegant dress watch for formal occasions, we have the perfect piece for your wrist.
           </p>
         </div>
         <div className={styles.imageWrapper} style={{ height: '500px' }}>
@@ -47,21 +47,21 @@ const watchMaker="https://media.istockphoto.com/id/937088398/photo/watchmaker-is
           <FaGem className={styles.valueIcon} />
           <h3 className={styles.valueTitle}>Authenticity</h3>
           <p className={styles.valueText}>
-            [PLACEHOLDER] We guarantee the authenticity of every watch we sell. Our rigorous inspection process ensures you receive exactly what you paid for.
+            [TIMOGRAPH] We guarantee the authenticity of every watch we sell. Our rigorous inspection process ensures you receive exactly what you paid for.
           </p>
         </div>
         <div className={styles.valueCard}>
           <FaHandshake className={styles.valueIcon} />
           <h3 className={styles.valueTitle}>Customer First</h3>
           <p className={styles.valueText}>
-            [PLACEHOLDER] Our relationship with you doesn't end at the sale. We provide exceptional after-sales support and guidance for all your horological needs.
+            [TIMOGRAPH] Our relationship with you doesn't end at the sale. We provide exceptional after-sales support and guidance for all your horological needs.
           </p>
         </div>
         <div className={styles.valueCard}>
           <FaClock className={styles.valueIcon} />
           <h3 className={styles.valueTitle}>Heritage</h3>
           <p className={styles.valueText}>
-            [PLACEHOLDER] We respect the deep history of watchmaking, curating pieces that carry significant heritage and timeless design language.
+            [TIMOGRAPH] We respect the deep history of watchmaking, curating pieces that carry significant heritage and timeless design language.
           </p>
         </div>
       </section>

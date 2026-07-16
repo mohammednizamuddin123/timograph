@@ -56,9 +56,11 @@ const Footer = () => {
         <div className={styles.footerSection}>
           <h3>Contact Info</h3>
           <ul className={styles.contactInfo}>
-            <li>Email: support@timograph.com</li>
-            <li>Phone: +1 234 567 890</li>
-            <li>Address: 123 Watch Ave, NY 10001</li>
+            <li>Email: timographqatar@gmail.com</li>
+            <li>Phone: +974 3150 1001</li>
+            <li>Address: Al Asmakh Mall,AlSadd <br />
+                         Gulf Mall,Gharafa
+            </li>
           </ul>
         </div>
       </div>
